@@ -1,0 +1,41 @@
+{
+  "alternatives": [
+    {
+      "Nama": "A. H. Ahyad",
+      "Kriteria": {
+        "C1": 3,
+        "C2": 3,
+        "C3": 3,
+        "C4": 3,
+        "C5": 3
+      }
+    }
+  ],
+  "criteria": {
+    "C1": {
+        "Nama": "Absensi",
+        "Jenis": "BENEFIT",
+        "Bobot": 0.15
+    },
+    "C2": {
+        "Nama": "Jumlah Mengajar",
+        "Jenis": "BENEFIT",
+        "Bobot": 0.1
+    },
+    "C3": {
+        "Nama": "Disiplin",
+        "Jenis": "BENEFIT",
+        "Bobot": 0.25
+    },
+    "C4": {
+        "Nama": "Tugas Tambahan",
+        "Jenis": "BENEFIT",
+        "Bobot": 0.25
+    },
+    "C5": {
+        "Nama": "Pengembangan Profesi",
+        "Jenis": "BENEFIT",
+        "Bobot": 0.25
+    }
+  }
+}

@@ -3,17 +3,82 @@ Content-Type: application/json
 
 {
   "alternatives": [
-    {"Nama": "A. H. Ahyad", "C1 (Absensi)": 3, "C2 (Jumlah Mengajar)": 3, "C3 (Disiplin)": 2, "C4 (Tugas Tambahan)": 2, "C5 (Pengembangan Profesi)": 3},
-    {"Nama": "B. Djoeniati, S.H., S.Pd", "C1 (Absensi)": 2, "C2 (Jumlah Mengajar)": 2, "C3 (Disiplin)": 2, "C4 (Tugas Tambahan)": 3, "C5 (Pengembangan Profesi)": 3},
-    {"Nama": "C. Saddam Husain", "C1 (Absensi)": 3, "C2 (Jumlah Mengajar)": 2, "C3 (Disiplin)": 3, "C4 (Tugas Tambahan)": 3, "C5 (Pengembangan Profesi)": 3},
-    {"Nama": "D. Siti Hawa, S.Ag", "C1 (Absensi)": 2, "C2 (Jumlah Mengajar)": 3, "C3 (Disiplin)": 3, "C4 (Tugas Tambahan)": 2, "C5 (Pengembangan Profesi)": 3},
-    {"Nama": "E. Reni Regislawati, S.Pd", "C1 (Absensi)": 3, "C2 (Jumlah Mengajar)": 1, "C3 (Disiplin)": 1, "C4 (Tugas Tambahan)": 2, "C5 (Pengembangan Profesi)": 2}
+    {
+      "Nama": "A. H. Ahyad",
+      "Kriteria": {
+        "C1": 3,
+        "C2": 3,
+        "C3": 2,
+        "C4": 2,
+        "C5": 3
+      }
+    },
+    {
+      "Nama": "B. Djoeniati, S.H., S.Pd",
+      "Kriteria": {
+        "C1": 2,
+        "C2": 2,
+        "C3": 2,
+        "C4": 3,
+        "C5": 3
+      }
+    },
+    {
+      "Nama": "C. Saddam Husain",
+      "Kriteria": {
+        "C1": 3,
+        "C2": 2,
+        "C3": 3,
+        "C4": 3,
+        "C5": 3
+      }
+    },
+    {
+      "Nama": "D. Siti Hawa, S.Ag",
+      "Kriteria": {
+        "C1": 2,
+        "C2": 3,
+        "C3": 3,
+        "C4": 2,
+        "C5": 3
+      }
+    },
+    {
+      "Nama": "E. Reni Regislawati, S.Pd",
+      "Kriteria": {
+        "C1": 3,
+        "C2": 1,
+        "C3": 1,
+        "C4": 2,
+        "C5": 2
+      }
+    }
   ],
-  "weights": {
-    "C1 (Absensi)": 0.15,
-    "C2 (Jumlah Mengajar)": 0.10,
-    "C3 (Disiplin)": 0.25,
-    "C4 (Tugas Tambahan)": 0.25,
-    "C5 (Pengembangan Profesi)": 0.25
+  "criteria": {
+    "C1": {
+      "Nama": "Absensi",
+      "Jenis": "BENEFIT",
+      "Bobot": 0.15
+    },
+    "C2": {
+      "Nama": "Jumlah Mengajar",
+      "Jenis": "BENEFIT",
+      "Bobot": 0.10
+    },
+    "C3": {
+      "Nama": "Disiplin",
+      "Jenis": "BENEFIT",
+      "Bobot": 0.25
+    },
+    "C4": {
+      "Nama": "Tugas Tambahan",
+      "Jenis": "BENEFIT",
+      "Bobot": 0.25
+    },
+    "C5": {
+      "Nama": "Pengembangan Profesi",
+      "Jenis": "BENEFIT",
+      "Bobot": 0.25
+    }
   }
 }
