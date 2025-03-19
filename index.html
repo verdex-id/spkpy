@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAW Calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-md">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">SAW Calculation</h1>
+
+        <!-- Input Weights -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Kriteria</h2>
+            <div id="weights-container" class="space-y-2 mb-4"></div>
+            <div class="flex items-center justify-between mb-4">
+                <input id="weight-name" class="border border-gray-300 rounded-lg p-2 w-full sm:w-1/4 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="kriteria">
+                <input id="weight-value" type="number" step="0.1" class="border border-gray-300 rounded-lg p-2 w-full sm:w-1/4 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="bobot">
+                <select id="weight-type" class="border border-gray-300 rounded-lg p-2 w-full sm:w-1/4 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <option value="BENEFIT">Benefit</option>
+                    <option value="COST">Cost</option>
+                </select>
+                <button onclick="addWeight()" class="bg-purple-100 text-purple-500 font-semibold px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition w-full sm:w-auto">+ Kriteria</button>
+            </div>
+        </div>
+
+        <!-- Input Alternatives -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-semibold text-gray-700">Alternatif</h2>
+                <button onclick="addAlternative()" class="bg-purple-100 text-purple-500 font-semibold px-6 py-3 rounded-lg hover:bg-purple-600 hover:text-white transition">+ Alternatif</button>
+            </div>
+        
+            <!-- Header untuk kolom alternatif -->
+            <div id="some-krit" class="flex flex-wrap items-center mb-2 gap-2 font-semibold text-gray-600 border-b pb-2">
+                <span class="p-2 flex-1 min-w-[150px]">Alternative Name</span>
+                <span class="p-2" id="action-header">Action</span>
+            </div>
+
+        
+            <div id="alternatives-container" class="space-y-2 mb-4"></div>
+        </div>
+        
+
+        <!-- Calculate Button -->
+        <div class="text-right w-full">
+            <button onclick="calculateSAW()" class="bg-blue-100 text-blue-500 font-semibold px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition w-full">
+               Hitung 
+            </button>
+        </div>
+
+
+        <!-- Result -->
+        <div id="result" class="mt-8 p-6 bg-gray-100 rounded-lg shadow-md"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
