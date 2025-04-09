@@ -4,7 +4,7 @@ Content-Type: application/json
 {
   "alternatives": [
     {
-      "Nama": "A. H. Ahyad",
+      "Nama": "H. Ahyad",
       "Kriteria": {
         "C1": 3,
         "C2": 3,
@@ -14,7 +14,7 @@ Content-Type: application/json
       }
     },
     {
-      "Nama": "B. Djoeniati, S.H., S.Pd",
+      "Nama": "Djoeniati, S.H., S.Pd",
       "Kriteria": {
         "C1": 2,
         "C2": 2,
@@ -24,7 +24,7 @@ Content-Type: application/json
       }
     },
     {
-      "Nama": "C. Saddam Husain",
+      "Nama": "Saddam Husain",
       "Kriteria": {
         "C1": 3,
         "C2": 2,
@@ -34,7 +34,7 @@ Content-Type: application/json
       }
     },
     {
-      "Nama": "D. Siti Hawa, S.Ag",
+      "Nama": "Siti Hawa, S.Ag",
       "Kriteria": {
         "C1": 2,
         "C2": 3,
@@ -44,7 +44,7 @@ Content-Type: application/json
       }
     },
     {
-      "Nama": "E. Reni Regislawati, S.Pd",
+      "Nama": "Reni Regislawati, S.Pd",
       "Kriteria": {
         "C1": 3,
         "C2": 1,
